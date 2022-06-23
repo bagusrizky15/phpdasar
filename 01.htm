@@ -15,37 +15,47 @@
             background-color: orange;
             color: white;
         }
-
     </style>
 </head>
 
 <body>
-   <table border="1">
-    <tr>
-        <th>No</th>
-        <th>Nama</th>
-        <th>Alamat</th>
-        <th>Jurusan</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Jajang</td>
-        <td>Cipeundey</td>
-        <td>Akuntansi</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Budiman</td>
-        <td>Ciwaruga</td>
-        <td>Mesin</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Dede Suhendar</td>
-        <td>Rajapolah</td>
-        <td>Teknik Komputer</td>
-    </tr>
-   </table>
+    <table border="1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Jurusan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Jajang</td>
+            <td>Cipeundey</td>
+            <td>Akuntansi</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Budiman</td>
+            <td>Ciwaruga</td>
+            <td>Mesin</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dede Suhendar</td>
+            <td>Rajapolah</td>
+            <td>Teknik Komputer</td>
+        </tr>
+    </table>
+
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000 ;">
+    </canvas>
+
+    <script>
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.fillStyle="#FF000";
+        ctx.fillRect(0,0,150,75);
+    </script>
 </body>
 
 </html>
